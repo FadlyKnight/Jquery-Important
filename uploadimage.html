@@ -1,0 +1,44 @@
+
+<!-- enctype="multipart/form-data" Is Important  -->
+        <form method="POST" id="form" enctype="multipart/form-data">
+          <div class="card-body">
+
+            @csrf
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="name">Nama</label>
+                  <input type="text" id="name" name="name" class="form-control" />
+
+                  <div class="invalid-feedback"></div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="nohp">No HP</label>
+                  <input type="text" id="nohp" name="nohp" class="form-control" />
+
+                  <div class="invalid-feedback"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="email">Email</label>
+                    <input type="email" id="email" name="email" class="form-control"/>
+                    <div class="invalid-feedback"></div>
+                </div>
+              </div>
+              <!-- THIS INPUT FILE -->
+              <div class="col-lg-6">
+                  <div class="form-group">
+                      <label for="imageName">Image</label>
+                      <div id="displayImage"></div>
+                      <input type="file" id="imageName" name="imageName" class="form-control"/>
+                      <div class="invalid-feedback"></div>
+                  </div>
+              </div>
+            </div>
+
+        </div>
