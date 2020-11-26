@@ -1,0 +1,32 @@
+
+function detect_safe_search($path)
+{
+    global $wo;
+    $content = '{"requests": [{"image": {"source": {"imageUri": "' . $path . '"}},"features": [{"type": "SAFE_SEARCH_DETECTION","maxResults": 1},{"type": "WEB_DETECTION","maxResults": 2}]}]}';
+    try {
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, 'https://vision.googleapis.com/v1/images:annotate?key='.$ITS_YOUR_API_VISION);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json','Content-Length: ' . strlen($content)));
+        curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'POST');
+        curl_setopt($ch, CURLOPT_POSTFIELDS,$content);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        $response  = curl_exec($ch);
+        curl_close($ch);
+        $data = json_decode($response);
+        if (!empty($data->error)) {
+            return true;
+        }
+        if (!empty($data->responses[0]->error)) {
+            return true;
+        }
+        elseif ($data->responses[0]->safeSearchAnnotation->adult == 'LIKELY' || $data->responses[0]->safeSearchAnnotation->adult == 'VERY_LIKELY'){
+            return false;
+        } 
+        else{
+            return true;
+        }
+    }
+    catch (Exception $e) {
+        return true;
+    }
+}
