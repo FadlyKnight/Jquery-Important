@@ -10,7 +10,7 @@
 | Bloomberg Markets       | http://www.bloomberg.com/feeds/podcasts/advantage.xml |
 | Bloomberg Views         | http://www.bloomberg.com/feeds/podcasts/view.xml      |
 | Bloomberg Radio         | https://www.bloomberg.com/feeds/podcasts/featured.xml |
-|                         |                                                       |
+| Bloomberg Business      | http://www.newslookup.com/rss/business/bloomberg.rss  |
 | *Reuters*               |                                                       |
 | Reuters World News      | http://feeds.reuters.com/Reuters/worldNews            |
 | Reuters Money           | http://feeds.reuters.com/news/wealth                  |
