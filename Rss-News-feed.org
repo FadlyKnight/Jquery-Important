@@ -1,0 +1,27 @@
+---------------
+| *Credit By :*| <a href="https://gist.github.com/caiorss/dbd05807b6869df207bb6d86770a1626"> caiorss/newsRssFeeds.org</a>|
+---------------
+*News RSS Feeds*
+
+|                         |                                                       |
+|-------------------------+-------------------------------------------------------|
+|                         | *News*                                                |
+| *Bloomberg*             |                                                       |
+| Bloomberg Markets       | http://www.bloomberg.com/feeds/podcasts/advantage.xml |
+| Bloomberg Views         | http://www.bloomberg.com/feeds/podcasts/view.xml      |
+| Bloomberg Radio         | https://www.bloomberg.com/feeds/podcasts/featured.xml |
+|                         |                                                       |
+| *Reuters*               |                                                       |
+| Reuters World News      | http://feeds.reuters.com/Reuters/worldNews            |
+| Reuters Money           | http://feeds.reuters.com/news/wealth                  |
+|                         |                                                       |
+|                         |                                                       |
+|                         | *Reddit*                                              |
+| /r/haskell              | https://reddit.com/r/haskell.rss                      |
+| /r/ocaml                | https://reddit.com/r/ocaml.rss                        |
+| /r/fsharp               | https://reddit.com/r/fsharp.rss                       |
+| /r/scala                | https://reddit.com/r/scala.rss                        |
+| /r/programming          | https://reddit.com/r/programming.rss                  |
+|                         |                                                       |
+|                         |                                                       |
+
